@@ -4,9 +4,10 @@ on:
   push:
     branches: master
   pull_request:
-      paths:
-        - docker-compose.yml
-        - services
+    paths:
+      - docker-compose.yml
+      - services
+  workflow_dispatch:
 
 jobs:
   build:
